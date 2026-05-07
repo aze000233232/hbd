@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+
+  <!-- 🌸 CUTE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="arf.css">
+</head>
+<body>
+
+<!-- GLOBAL BACK BUTTON -->
+<button id="globalBack" onclick="goBack()">❮</button>
+
+<!-- AUDIO -->
+<audio id="bg-music" src="bg.mp3" loop></audio>
+<audio id="song" src="wv.mp3"></audio>
+
+<div class="container">
+
+<!-- 1 LANDING -->
+<section id="v1" class="active">
+  <div class="card">
+    <img src="img/cake.png" class="cake" onclick="next(2)">
+  </div>
+</section>
+
+<!-- 2 -->
+<section id="v2">
+  <div class="card">
+    <img src="img/0.1.png">
+     <h2 class="main-title">Happy 24th Birthday Alyssa!!!</h2>
+
+     <p class="sub-title">
+      aka samsam aka fyang aka darcy ૮ ˶ᵔ ᵕ ᵔ˶ ა
+    </p>
+    
+    <button onclick="next(3)">Next</button>
+  </div>
+</section>
+
+<!-- 3 -->
+<section id="v3">
+  <div class="card">
+    <p>our only photos together lol (I carried)</p>
+  </div>
+
+  <div class="v3-images">
+    <img src="img/1.jpg">
+    <img src="img/2.jpg">
+    <img src="img/3.jpg">
+  </div>
+
+  <button onclick="next(4)">Next</button>
+</section>
+
+<!-- 4 MUSIC PLAYER -->
+<section id="v4">
+
+  <div class="music-player">
+
+    <div class="player-top">
+      <img src="img/n2.jpg" class="cover-art">
+
+      <div class="song-info">
+        <h2>your favourite song</h2>
+        <p>???</p>
+      </div>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-area">
+      <span id="currentTime">0:00</span>
+
+      <div class="progress-bar" onclick="seekSong(event)">
+        <div class="progress"></div>
+      </div>
+
+      <span id="duration">0:00</span>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="music-controls">
+      <button class="music-btn play-btn" onclick="toggleSong()" id="playBtn">
+        ▶
+      </button>
+    </div>
+
+  </div>
+
+  <button onclick="next(5)">Next</button>
+</section>
+
+<!-- 5 -->
+<section id="v5">
+  <img src="img/envelope.1.png" class="envelope">
+
+  <div class="btn-group">
+    <button onclick="next(7)">Open it</button>
+    <button onclick="next(6)">No no</button>
+  </div>
+</section>
+
+<!-- 6 -->
+<section id="v6">
+  <div class="card">
+    <img src="img/n1pro.jpg">
+    <p>awh.. open mo na te, ples ૮(˶ㅠ︿ㅠ)ა</p>
+    <button onclick="next(5)">again ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</button>
+  </div>
+</section>
+
+<!-- 7 -->
+<section id="v7">
+  <div class="card big">
+    <p>
+      happy birthday so much, te. I wish you nothing but the best in life tsaka ano basta live long and prosper. tbh, walang idea na pumapasok sa caveman brain ko rn so ta-type ko nalang kung ano dumaan sa isip ko. I'm not sure if most people are aware of the effect that they have on others or at least the extent of which sometimes, even the smallest gestures could actually mean a lot to someone. handing out a handwritten letter that expresses care and regard to a stranger, talking to that same stranger and being friends with them is another level of ... I guess kindness that most people don’t really show anymore. I'm not the best at showing gratitude or appreciation nor accepting them but when I simply say "thanks", it comes from the bottom of my heart. some people enter your life loudly while others just slowly become part of your routine until one day you realize things would feel emptier without them there and you’re probably the second kind. soooo sana hindi magbago yung nature mo and always change for the better. more birthdays and blessings to come. I hope life treats you gently and gives you more of the things that make you feel at peace.
+happy birthday again, te. take care always.
+    </p>
+  </div>
+
+  <button onclick="next(8)">Next</button>
+</section>
+
+<!-- 8 -->
+<section id="v8">
+  <div class="card">
+    <h2>Numbers 6:24-26</h2>
+    <p>
+      "The Lord bless you
+    and keep you;
+     the Lord make his face shine on you
+    and be gracious to you;
+     the Lord turn his face toward you
+    and give you peace."
+    </p>
+    <button onclick="restart()">Start Over (˶ᵔ ᵕ ᵔ˶)</button>
+  </div>
+</section>
+
+</div>
+
+<script src="rawr.js"></script>
+</body>
+</html>
