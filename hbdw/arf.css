@@ -5,7 +5,7 @@ body {
   overflow: hidden;
 }
 
-/* BACKGROUND */
+
 body::before {
   content: "";
   position: fixed;
@@ -34,7 +34,7 @@ body::after {
   height: 45px;
   padding: 0;
 
-  border-radius: 50%; /* 👈 makes it a circle */
+  border-radius: 50%; 
   border: none;
   background: #66bb6a;
   color: white;
@@ -60,7 +60,7 @@ body::after {
   align-items: center;
 }
 
-/* SECTIONS - SMOOTHER */
+
 section {
   position: absolute;
   top: 50%;
@@ -135,7 +135,7 @@ p, h1, h2 {
   border-radius: 15px;
 }
 
-/* 🎯 V2 IMAGE BOUNCE */
+
 #v2 img {
   animation: bounceTimed 1.5s infinite;
 }
@@ -216,7 +216,7 @@ p, h1, h2 {
   opacity: 0.7;
 }
 
-/* PROGRESS */
+
 .progress-area {
   display: flex;
   align-items: center;
@@ -311,7 +311,7 @@ button:active {
   transform: scale(0.95);
 }
 
-/* CONFETTI */
+
 .confetti {
   position: fixed;
   top: -10px;
